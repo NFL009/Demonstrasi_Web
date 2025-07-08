@@ -1,54 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-    text-align: center;
-    padding: 50px;
-  }
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
 
-  h1 {
-    color: #333;
-  }
+    .container {
+      background-color: #f2ca8e;
+      padding: 30px 40px;
+      border-radius: 30px;
+      box-shadow: 10px 10px 0 #000;
+      text-align: center;
+      width: 600px;
+    }
 
-  #game {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    display: inline-block;
-  }
+    .status {
+      background-color: black;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
 
-  input[type="number"] {
-    padding: 10px;
-    width: 60px;
-    font-size: 16px;
-  }
+    input[type="number"] {
+      font-size: 30px;
+      text-align: center;
+      padding: 10px;
+      width: 100px;
+      border-radius: 20px;
+      border: 2px solid black;
+      margin-right: 20px;
+    }
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
+    button {
+      background-color: cyan;
+      border: 2px solid black;
+      font-size: 30px;
+      padding: 10px 30px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-  #message {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-  }
+    .lives {
+      margin-top: 30px;
+      font-size: 40px;
+    }
 
-  #lives {
-    margin-top: 10px;
-    font-size: 18px;
-  }
+    .heart {
+      margin: 5px;
+    }
 
-  .success {
-    color: green;
-  }
-
-  .error {
-    color: red;
-  }
-
-  .info {
-    color: orange;
-  }
+    #tombolBack{
+      background-color: black;
+      color: #fff;
+      margin-top: 12px;
+      width: 200px;
+      height: 75px;
+      border-radius: 25px;
+    }

@@ -1,51 +1,41 @@
-let targetNumber;
-    let lives;
+    let target = Math.floor(Math.random() * 100) + 1;
+    let lives = 6;
 
-    function initGame() {
-      targetNumber = Math.floor(Math.random() * 100) + 1;
-      lives = 5;
-      document.getElementById('livesCount').textContent = lives;
-      document.getElementById('message').textContent = '';
-      document.getElementById('message').className = '';
-      document.getElementById('guessInput').disabled = false;
+    function updateHearts() {
+      let hearts = '';
+      for (let i = 0; i < 6; i++) {
+        hearts += i < lives ? '❤️' : '🖤';
+      }
+      document.getElementById("livesDisplay").innerHTML = hearts;
+    }
+
+    function setStatus(text) {
+      document.getElementById("statusText").textContent = text;
     }
 
     function checkGuess() {
-      const guess = parseInt(document.getElementById('guessInput').value);
-
+      const guess = parseInt(document.getElementById("guessInput").value);
       if (isNaN(guess) || guess < 1 || guess > 100) {
-        setMessage("Masukkan angka 1 - 100!", "error");
+        setStatus("Masukkan angka 1-100");
         return;
       }
 
-      if (guess === targetNumber) {
-        setMessage("Tebakanmu BENAR! 🎉", "success");
-        document.getElementById('guessInput').disabled = true;
-      } else {
-        lives--;
-        document.getElementById('livesCount').textContent = lives;
-
-        if (lives === 0) {
-          setMessage("Kamu KALAH! Angkanya adalah " + targetNumber, "error");
-          document.getElementById('guessInput').disabled = true;
-        } else {
-          const hint = guess < targetNumber ? "Terlalu kecil!" : "Terlalu besar!";
-          setMessage(hint, "info");
-        }
+      if (guess === target) {
+        setStatus("Kamu BENAR 🎉");
+        document.getElementById("guessInput").disabled = true;
+        return;
       }
 
-      document.getElementById('guessInput').value = '';
+      lives--;
+      updateHearts();
+
+      if (lives === 0) {
+        setStatus("Kamu KALAH 😢 (Angka: " + target + ")");
+        document.getElementById("guessInput").disabled = true;
+        return;
+      }
+
+      setStatus(guess < target ? "Terlalu kecil" : "Terlalu besar");
     }
 
-    function setMessage(msg, className) {
-      const messageDiv = document.getElementById('message');
-      messageDiv.textContent = msg;
-      messageDiv.className = className;
-    }
-
-    function restartGame() {
-      initGame();
-    }
-
-    // Mulai game saat halaman dimuat
-    window.onload = initGame;
+    updateHearts();
