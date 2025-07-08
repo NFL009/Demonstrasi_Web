@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 50px;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  #game {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: inline-block;
+  }
+
+  input[type="number"] {
+    padding: 10px;
+    width: 60px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  #message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #lives {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .success {
+    color: green;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .info {
+    color: orange;
+  }
