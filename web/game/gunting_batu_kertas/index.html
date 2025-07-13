@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Suit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="home">
+      <h2>Game Suit</h2>
+      <ul>
+        <li>Gunting ✌️</li>
+        <li>Batu ✊</li>
+        <li>Kertas ✋</li>
+      </ul>
+      <div style="display: flex; gap: 0.5rem; overflow-x: auto;">
+        <a href="../pilih.html" class="btn back">kembali</a>
+        <button class="btn mode" onclick="startGame('bot')">Main dengan komputer (bot)</button>
+        <button class="btn friend" onclick="startGame('friend')">Main dengan teman</button>
+      </div>
+    </div>
+
+    <div class="card" id="game" style="display: none;">
+      <h3 id="status-label">Komputer memilih :</h3>
+      <div class="choice-btn">
+        <span id="enemy-icon">?</span>
+        <div id="enemy-text">???</div>
+      </div>
+      <hr>
+      <h3 id="player-label">Anda memilih :</h3>
+      <div id="choices"></div>
+    </div>
+
+    <div class="card" id="result" style="display: none;">
+      <h3 id="result-enemy"></h3>
+      <div class="choice-btn">
+        <span id="enemy-icon-final"></span>
+        <div id="enemy-text-final"></div>
+      </div>
+      <hr>
+      <h3 id="result-player"></h3>
+      <div class="choice-btn">
+        <span id="player-icon-final"></span>
+        <div id="player-text-final"></div>
+      </div>
+      <hr>
+      <button class="btn" style="background:black; color:white" onclick="backHome()">Kembali</button>
+      <button class="btn" style="background:#8f8;" onclick="mainUlang()">Main</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
