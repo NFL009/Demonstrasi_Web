@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilih game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ini tab game</h1>
+  <div class="header">
+    <a class="back-button" href="../index.html">←</a>
+    <span class="title">Game</span>
+    <button class="menu-button" id="menuToggle">☰</button>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="menu" id="menu">
+    <a href="#">Tentang ini</a>
+    <a href="#">Source code</a>
+    <a href="#">Laporan bug</a>
+    <a href="#">Saran</a>
+  </div>
+
+  <div class="game-container">
+    <a href="tebak_angka/index.html" class="game-card">
+      <img src="tebak_angka.png" alt="Tebak Angka">
+      <span>Tebak Angka</span>
+    </a>
+    <a href="tic_tac_toe/index.html" class="game-card">
+      <img src="tic_tac_toe.png" alt="Tic Tac Toe">
+      <span>Tic Tac Toe</span>
+    </a>
+    <a href="flappy_bird/index.html" class="game-card">
+      <img src="flappy_bird.png" alt="Flappy Bird">
+      <span>Flappy Bird</span>
+    </a>
+    <a href="gunting_batu_kertas/index.html" class="game-card">
+      <img src="suit.png" alt="Suit">
+      <span>Suit</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

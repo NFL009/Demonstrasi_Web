@@ -55,3 +55,13 @@
     .turn span {
       color: red;
     }
+
+      #tombolBack{
+      background-color: black;
+      color: #fff;
+      margin-top: 12px;
+      width: 180px;
+      height: 60px;
+      border-radius: 25px;
+      font-size: x-large;
+    }
