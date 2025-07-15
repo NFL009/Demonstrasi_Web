@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #000;
+}
+
+.header {
+  background-color: #bff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo, .info-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.header h1 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.content {
+  padding: 15px;
+}
+
+.pilihan h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  width: 45%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.quotes {
+  margin-top: 25px;
+}
+
+.box {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.box.merah {
+  background-color: #ff4444;
+}
+
+.box.biru {
+  background-color: #3366ff;
+}
+
+.ajakan h2 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.faq .qa {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Responsive untuk Desktop */
+@media (min-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+
+  .cards a {
+    width: 200px;
+  }
+
+  .card img {
+    height: 150px;
+    object-fit: contain;
+  }
+}
