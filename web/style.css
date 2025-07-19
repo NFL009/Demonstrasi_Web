@@ -19,17 +19,29 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #000;
+  border-width: 5px;
+  border-radius: 25px;
+  width: 98%;
+  left: 50%;
+  transform:  translate(-1%, 5%);
+
 }
 
-.logo, .info-icon {
+.logo {
   width: 60px;
   height: 60px;
+}
+
+.info-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .header h1 {
   font-size: 16px;
   text-align: center;
+  font-family: cursive;
 }
 
 .blue {
@@ -131,4 +143,8 @@ ul {
     height: 150px;
     object-fit: contain;
   }
+
+  .header h1 {
+  font-size: 24px;
+}
 }
