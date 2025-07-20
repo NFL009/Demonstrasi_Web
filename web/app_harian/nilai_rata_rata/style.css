@@ -1,0 +1,85 @@
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: white;
+    }
+
+    h1 {
+      background-color: #a8e6ef;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px #888;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    table, th, td {
+      border: 2px solid black;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .edit-button, .close-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: lightgray;
+      border: none;
+      border-radius: 1rem;
+      font-size: 1rem;
+    }
+
+    .result-box {
+      background: #fff8b3;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border-radius: 1rem;
+      font-weight: bold;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.3);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      max-width: 90%;
+      width: 400px;
+      font-size: 1rem;
+    }
+
+    .modal-content input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: none;
+      background: #a8e6ef;
+      border-radius: 0.5rem;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }

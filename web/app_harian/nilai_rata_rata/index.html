@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilai Rata-Rata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Nilai Rata - Rata</h1>
+
+  <div id="table-container"></div>
+
+  <button class="edit-button" onclick="openEditModal()">Edit ...</button>
+
+  <p><strong>RR</strong> = Rata - Rata</p>
+  <div id="result-container"></div>
+
+  <div class="modal" id="edit-modal">
+    <div class="modal-content">
+      <button onclick="closeEditModal()" style="float:right;font-size:1.2rem;color:red;border:none;background:none">&times;</button>
+      <h2>Edit tabel</h2>
+      <label class="label">Mata Pelajaran</label>
+      <p>Banyaknya elemen:</p>
+      <input type="number" id="jumlah-mapel" min="1" />
+      <label>Ganti kata "Mapel" menjadi:</label>
+      <input type="text" id="mapel-label" />
+
+      <label class="label">Semester</label>
+      <p>Banyaknya elemen:</p>
+      <input type="number" id="jumlah-semester" min="1" />
+      <label>Ganti kata "Semester" menjadi:</label>
+      <input type="text" id="semester-label" />
+
+      <button class="edit-button" onclick="applyEdit()">Terapkan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

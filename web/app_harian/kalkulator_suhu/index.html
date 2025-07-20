@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Suhu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Kalkulator Suhu</h1>
+
+    <div class="input-group">
+      <div class="input-box red">
+        <label for="celcius">Celcius</label>
+        <input type="number" id="celcius" />
+      </div>
+      <div class="input-box yellow">
+        <label for="reamur">Reamur</label>
+        <input type="number" id="reamur" />
+      </div>
+      <div class="input-box green">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="number" id="fahrenheit" />
+      </div>
+      <div class="input-box blue">
+        <label for="kelvin">Kelvin</label>
+        <input type="number" id="kelvin" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="rumus">
+      <h2>Rumus konversi suhu terhadap celcius</h2>
+      <p><strong>Celcius ke Reamur:</strong><br> (4 / 5) × °C</p>
+      <p><strong>Celcius ke Fahrenheit:</strong><br> (9 / 5 × °C) + 32</p>
+      <p><strong>Celcius ke Kelvin:</strong><br> °C + 273</p>
+    </div>
+  </div>
+
+  <a href="../pilih.html"><button id="tombolBack">kembali</button></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
