@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Gaya Belajar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Quiz Gaya Belajar</h1>
+
+  <!-- Halaman Awal -->
+  <div class="container" id="startPage">
+    <p>Quiz ini membantu mengetahui apakah kamu tipe pembelajar visual, auditori, atau kinestetik.</p>
+    <button class="button start" onclick="showQuiz()">Mulai</button>
+  </div>
+
+  <!-- Halaman Quiz -->
+  <form id="quizForm" class="container hidden">
+    <div id="questionsContainer"></div>
+    <button type="submit" class="button start">Lihat Hasil</button>
+  </form>
+
+  <!-- Halaman Hasil -->
+  <div class="container hidden" id="resultPage">
+    <p id="resultText">Deskripsi hasilnya</p>
+    <a href="../pilih.html" class="button back">Kembali</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
