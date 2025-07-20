@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const infoIcon = document.getElementById('infoIcon');
     let popupOverlay;
-ts
+
     function createPopup() {
 
         popupOverlay = document.createElement('div');
