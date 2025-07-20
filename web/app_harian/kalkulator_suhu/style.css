@@ -69,12 +69,15 @@
       font-weight: bold;
     }
 
-    #tombolBack{
+    #tombolBack {
       background-color: black;
       color: #fff;
-      margin-top: 12px;
+      margin: 20px auto 0 auto;
       width: 180px;
       height: 60px;
       border-radius: 25px;
       font-size: x-large;
+      display: block;
+      cursor: pointer;
+      border: none;
     }
